@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/Dream-cleaning-site/css/style.css" />
     <title>Dream Cleaning Solution</title>
 
     <!-- box icons -->
@@ -59,7 +59,7 @@
       <h2 class="heading">About <span>Dream Cleaning</span></h2>
 
       <div class="about-img">
-        <img src="/photos/dreamlogo.jpeg" alt="Logo" />
+        <img src="../photos/dreamlogo.jpeg" alt="Logo" />
         <span class="circle-spin"> </span>
       </div>
 
@@ -91,34 +91,34 @@
       <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="/photos/piscina1.jpg" style="width: 100%" />
+          <img src="../photos/piscina1.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="/photos/piscina2.jpg" style="width: 100%" />
+          <img src="../photos/piscina2.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="/photos/piscina3.jpg" style="width: 100%" />
+          <img src="../photos/piscina3.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="/photos/img4.jpg" style="width: 100%" />
+          <img src="../photos/img4.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="/photos/img5.jpg" style="width: 100%" />
+          <img src="../photos/img5.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="/photos/img6.jpg" style="width: 100%" />
+          <img src="../photos/img6.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
       </div>
@@ -146,33 +146,57 @@
     <section class="contact" id="contact">
       <h3 class="heading">Contact <span>Me</span></h3>
 
-      <form action="#">
+      <form id="form">
         <div class="input-box">
           <div class="input-field">
-            <input type="text" placeholder="Full Name" required />
+            <input
+              type="text"
+              placeholder="Full Name"
+              required
+              name="name"
+              class="name"
+            />
             <span class="focus"></span>
           </div>
           <div class="input-field">
-            <input type="text" placeholder="Email Address" required />
+            <input
+              type="text"
+              placeholder="Email Address"
+              required
+              name="email"
+              class="email"
+            />
             <span class="focus"></span>
           </div>
         </div>
 
         <div class="input-box">
           <div class="input-field">
-            <input type="number" placeholder="Mobile Number" required />
+            <input
+              type="number"
+              placeholder="Mobile Number"
+              required
+              name="number"
+              class="number"
+            />
             <span class="focus"></span>
           </div>
           <div class="input-field">
-            <input type="text" placeholder="Email Subject" required />
+            <input
+              type="text"
+              placeholder="Email Subject"
+              required
+              name="subject"
+              class="subject"
+            />
             <span class="focus"></span>
           </div>
         </div>
 
         <div class="textarea-field">
           <textarea
-            name=""
-            id=""
+            name="content"
+            id="content"
             cols="30"
             rows="10"
             placeholder="Your Message"
@@ -185,6 +209,7 @@
           <button type="submit" class="btn">Submit</button>
         </div>
       </form>
+      <div class="response" style="color: black"></div>
     </section>
 
     <!-- footer design -->
@@ -200,5 +225,5 @@
 
     <!-- contact us section  ends -->
   </body>
-  <script src="/js/script.js"></script>
+  <script src="../js/script.js"></script>
 </html>
