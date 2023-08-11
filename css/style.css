@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 
 * {
   margin: 0;
@@ -9,14 +8,14 @@
   border: none;
   outline: smooth;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-  --main-color: #00658C;
+  --main-color: #00658c;
   --text-color: #fff;
   --gold-color: #dcc577;
-  --gray-color: #D3D3D3;
+  --gray-color: #d3d3d3;
   --primary-color: #1c3744;
 }
 
@@ -44,9 +43,9 @@ body {
 }
 
 .logo {
- font-size: 2.5rem;
- color: var(--gold-color);
- font-weight: 600; 
+  font-size: 2.5rem;
+  color: var(--gold-color);
+  font-weight: 600;
 }
 
 .navbar a {
@@ -54,7 +53,7 @@ body {
   color: var(--text-color);
   font-weight: 500;
   margin-left: 3.5rem;
-  transition: .5s;
+  transition: 0.5s;
   border-bottom: 2px solid var(--gold-color);
 }
 
@@ -102,7 +101,7 @@ section {
   font-size: 3.2rem;
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: .7px var(--main-color);
+  -webkit-text-stroke: 0.7px var(--main-color);
 }
 
 .home-content p {
@@ -127,15 +126,15 @@ section {
   width: 15rem;
   height: 100%;
   background: var(--primary-color);
-  border: .2rem solid var(--main-color);
-  border-radius: .8rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.8rem;
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: var(--text-color);
   z-index: 1;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .btn-box .btn::nth-child(2) {
@@ -152,7 +151,7 @@ section {
 }
 
 .btn-box .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -160,7 +159,7 @@ section {
   height: 100%;
   background: var(--main-color);
   z-index: -1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .btn-box .btn:hover::before {
@@ -183,7 +182,7 @@ section {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: .2rem solid var(--main-color);
+  border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   font-size: 20px;
   color: var(--main-color);
@@ -196,6 +195,10 @@ section {
   flex-direction: column;
   gap: 2rem;
   background-color: var(--primary-color);
+}
+
+.services {
+  background: var(--primary-color);
 }
 
 .heading {
@@ -221,7 +224,7 @@ span {
 .about-img img {
   width: 90%;
   border-radius: 50%;
-  border: .2rem solid var(--main-color);
+  border: 0.2rem solid var(--main-color);
 }
 
 .about-img .circle-spin {
@@ -232,10 +235,10 @@ span {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border-top: .2rem solid var(--gray-color);
-  border-left: .2rem solid var(--gray-color);
-  border-right: .2rem solid var(--gold-color);
-  border-bottom: .2rem solid var(--gold-color);
+  border-top: 0.2rem solid var(--gray-color);
+  border-left: 0.2rem solid var(--gray-color);
+  border-right: 0.2rem solid var(--gold-color);
+  border-bottom: 0.2rem solid var(--gold-color);
 }
 
 .about-content {
@@ -259,7 +262,6 @@ span {
 .btn-box .btns a::before {
   background: var(--main-color);
 }
-
 
 .contact {
   min-height: auto;
@@ -294,7 +296,7 @@ span {
   color: var(--text-color);
   background: transparent;
   border-radius: 0.6rem;
-  border: 0.2rem solid var(--main-color);
+  border: 0.2rem solid var(--primary-color);
 }
 
 .contact form .input-box .input-field input::placeholder,
@@ -308,7 +310,7 @@ span {
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--second-bg-color);
+  background: var(--primary-color);
   border-radius: 0.6rem;
   z-index: -1;
   transition: 0.5s;
@@ -341,7 +343,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: var(--second-bg-color);
+  background: var(--primary-color);
 }
 
 .footer-text p {
@@ -368,7 +370,7 @@ span {
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--second-bg-color);
+  background: var(--primary-color);
   z-index: -1;
   transition: 0.5s;
 }
@@ -379,7 +381,7 @@ span {
 
 .footer-iconTop a i {
   font-size: 2rem;
-  color: var(--bg-color);
+  color: var(--primary-color);
   transition: 0.5s;
 }
 
