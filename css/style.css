@@ -301,7 +301,7 @@ span {
 
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder {
-  color: var(--text-color);
+  color: black;
 }
 
 .contact form .focus {
@@ -387,4 +387,9 @@ span {
 
 .footer-iconTop a:hover i {
   color: var(--main-color);
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
 }
