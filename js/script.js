@@ -1,6 +1,9 @@
 let slideIndex = 0
-showSlides()
 
+setInterval(() => {
+  showSlides()
+}, 3000 * 6)
+showSlides()
 function showSlides() {
   let i
   let slides = document.getElementsByClassName("mySlides")
@@ -17,5 +20,17 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block"
   dots[slideIndex - 1].className += " active"
-  setTimeout(showSlides, 3500) // Change image every 2 seconds
+  setTimeout(showSlides, 5000) // Change image every 2 seconds
 }
+
+const input = document.querySelector("input")
+
+input.addEventListener("focus", function () {
+  input.classList.add("active-placeholder")
+})
+
+input.addEventListener("blur", function () {
+  input.classList.remove("active-placeholder")
+})
+
+
