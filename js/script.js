@@ -1,49 +1,49 @@
-let slideIndex = 0;
+let slideIndex = 0
 
 setInterval(() => {
-  showSlides();
-}, 3000 * 6);
-showSlides();
+  showSlides()
+}, 3000 * 6)
+showSlides()
 function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let i
+  let slides = document.getElementsByClassName("mySlides")
+  let dots = document.getElementsByClassName("dot")
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = "none"
   }
-  slideIndex++;
+  slideIndex++
   if (slideIndex > slides.length) {
-    slideIndex = 1;
+    slideIndex = 1
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "")
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  slides[slideIndex - 1].style.display = "block"
+  dots[slideIndex - 1].className += " active"
+  setTimeout(showSlides, 7000) // Change image every 2 seconds
 }
 
-const input = document.querySelector("input");
+const input = document.querySelector("input")
 
 input.addEventListener("focus", function () {
-  input.classList.add("active-placeholder");
-});
+  input.classList.add("active-placeholder")
+})
 
 input.addEventListener("blur", function () {
-  input.classList.remove("active-placeholder");
-});
+  input.classList.remove("active-placeholder")
+})
 
-const form = document.getElementById("form");
+const form = document.getElementById("form")
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+  e.preventDefault()
 
-  let name = document.querySelector(".name").value;
-  let email = document.querySelector(".email").value;
-  let number = document.querySelector(".number").value;
-  let subject = document.querySelector(".subject").value;
-  let content = document.querySelector("#content").value;
-  const div = document.querySelector(".response");
+  let name = document.querySelector(".name").value
+  let email = document.querySelector(".email").value
+  let number = document.querySelector(".number").value
+  let subject = document.querySelector(".subject").value
+  let content = document.querySelector("#content").value
+  const div = document.querySelector(".response")
 
   await fetch("http://localhost:3000/send", {
     body: JSON.stringify({
@@ -55,13 +55,13 @@ form.addEventListener("submit", async (e) => {
     }),
     method: "POST",
     headers: { "Content-Type": "application/json" },
-  }).catch((err) => console.log(err));
+  }).catch((err) => console.log(err))
 
-  div.innerHTML = "<p>Sucess!</p>";
+  div.innerHTML = "<p>Sucess!</p>"
 
-  name = "";
-  email = "";
-  number = "";
-  subject = "";
-  content = "";
-});
+  name = ""
+  email = ""
+  number = ""
+  subject = ""
+  content = ""
+})
