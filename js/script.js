@@ -66,7 +66,7 @@ form.addEventListener("submit", async (e) => {
   content = ""
 })
 
-// function hiddeBtn() {
-//   let element = document.getElementById("container-hidden")
-//   element.classList.toggle("hidden")
-// }
+function hiddeBtn() {
+  let element = document.getElementById("container-hidden")
+  element.classList.toggle("hidden")
+}

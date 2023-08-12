@@ -556,6 +556,6 @@ h2 > span {
   cursor: pointer;
 }
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
