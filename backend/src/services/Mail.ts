@@ -3,8 +3,8 @@ import { IMailDTO } from "../interfaces/MailDTO";
 
 export async function sendMail(data: IMailDTO) {
   const message = {
-    from: "emaildetestes@gmail.com",
-    to: "companypool@gmail.com",
+    from: "New User!",
+    to: "Dreamcleaningsolution.lu@gmail.com",
     subject: data.subject,
     html: `<!DOCTYPE html>
     <html>
