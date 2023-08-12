@@ -532,3 +532,30 @@ h2 > span {
     scale: 1.03;
     border: 1px solid gold;
 }
+
+.container-js {
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 400px;
+  height: 250px;
+  background-color: var(--text-color);
+  border-radius: 14px;
+  padding: 10px 15px;
+}
+
+.container-js button {
+  padding: 8px 16px;
+  background-color: var(--main-color);
+  border-radius: 7px;
+  font-weight: 600;
+  margin-top: 3rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
