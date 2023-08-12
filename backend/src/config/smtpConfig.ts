@@ -11,10 +11,10 @@ import nodemailer from "nodemailer";
 //  });
 
 export const transporter = nodemailer.createTransport({
-  host: "sandbox.smtp.mailtrap.io",
-  port: 2525,
+  host: "smtp.gmail.com",
+  port: 465,
   auth: {
-    user: "88d94c7793ccbf",
-    pass: "fdb01588928add",
+    user: "poolresponses2@gmail.com",
+    pass: "ygkoqrskzhxusboq",
   },
 });
