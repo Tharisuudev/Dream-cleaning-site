@@ -52,6 +52,7 @@ body {
 .logo {
   font-size: 2.5rem;
   color: var(--gold-color);
+  filter: contrast(3);
   font-weight: 600;
 }
 
@@ -97,6 +98,8 @@ section {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
+  padding-bottom: 30px;
+  width: 100vh;
 }
 
 .home-content .text-animate {
@@ -108,13 +111,14 @@ section {
   font-size: 3.2rem;
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 0.7px var(--gold-color);
+  -webkit-text-stroke: 1.7px #fafafa;
 }
 
 .home-content p {
   font-size: 2rem;
   margin: 2rem 0 4rem;
-  color: var(--gold-color);
+  color: #fafafa;
+  filter: contrast(3);
 }
 
 .btn-box {
@@ -219,7 +223,8 @@ span {
 }
 
 #black span {
-  color: black;
+  color:var(--gold-color);
+  filter: contrast(3);
 }
 
 h2 > span {
