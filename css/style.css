@@ -109,14 +109,12 @@ section {
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 0.7px var(--gold-color);
-  filter: contrast(3);
 }
 
 .home-content p {
   font-size: 2rem;
   margin: 2rem 0 4rem;
   color: var(--gold-color);
-  filter: contrast(3);
 }
 
 .btn-box {
@@ -156,7 +154,7 @@ section {
 }
 
 .btn-box .btn::nth-child(2)::before {
-  background: var(--main-color);
+  background: var(--primary-color);
 }
 
 .btn-box .btn::before {
@@ -501,7 +499,10 @@ h2 > span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 100px;
+    padding-bottom: 3rem;
+    font-size: 16px;
+    background-color: #fafafa;
 }
 
 .services-contente{
@@ -513,9 +514,10 @@ h2 > span {
     width: 100%;
     height: inherit;
 }
-.services h2{
+.services-serv h2{
     font-size: 2.2rem;
     font-weight: 600;
+    color: black;
 }
 
 .services-item{
@@ -529,4 +531,4 @@ h2 > span {
 .services-item:hover{
     scale: 1.03;
     border: 1px solid gold;
-} 
+}
