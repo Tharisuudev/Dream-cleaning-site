@@ -52,6 +52,7 @@ body {
 .logo {
   font-size: 2.5rem;
   color: var(--gold-color);
+  filter: contrast(3);
   font-weight: 600;
 }
 
@@ -97,6 +98,8 @@ section {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
+  padding-bottom: 30px;
+  width: 100vh;
 }
 
 .home-content .text-animate {
@@ -108,14 +111,13 @@ section {
   font-size: 3.2rem;
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 0.7px var(--gold-color);
-  filter: contrast(3);
+  -webkit-text-stroke: 1.7px #fafafa;
 }
 
 .home-content p {
   font-size: 2rem;
   margin: 2rem 0 4rem;
-  color: var(--gold-color);
+  color: #fafafa;
   filter: contrast(3);
 }
 
@@ -156,7 +158,7 @@ section {
 }
 
 .btn-box .btn::nth-child(2)::before {
-  background: var(--main-color);
+  background: var(--primary-color);
 }
 
 .btn-box .btn::before {
@@ -221,7 +223,8 @@ span {
 }
 
 #black span {
-  color: black;
+  color:var(--gold-color);
+  filter: contrast(3);
 }
 
 h2 > span {
@@ -493,4 +496,71 @@ h2 > span {
 
 .active-placeholder {
   color: red;
+}
+
+.services-serv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding-bottom: 3rem;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+.services-contente {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  width: 100%;
+  height: inherit;
+}
+.services-serv h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.services-item {
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: 0.2s ease-in;
+}
+.services-item:hover {
+  scale: 1.03;
+  border: 1px solid gold;
+}
+
+.container-js {
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 400px;
+  height: 250px;
+  background-color: var(--text-color);
+  border-radius: 14px;
+  padding: 10px 15px;
+}
+
+.container-js button {
+  padding: 8px 16px;
+  background-color: var(--main-color);
+  border-radius: 7px;
+  font-weight: 600;
+  margin-top: 3rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
