@@ -30,15 +30,15 @@ export async function sendMail(data: IMailDTO) {
     <body>
       <div class="container">
         <div class="header">
-          <h2>Alerta de Contato</h2>
+          <h2>Contact Alert</h2>
         </div>
-        <p>Um usuário entrou em contato! Seguem abaixo os dados do mesmo:</p>
+        <p>A user has reached out! Below are their details:</p>
         <ul>
-          <li><strong>Nome:</strong> ${data.name}</li>
+          <li><strong>Name:</strong> ${data.name}</li>
           <li><strong>Email:</strong> ${data.from}</li>
-          <li><strong>Número:</strong> ${data.number}</li>
+          <li><strong>Number:</strong> ${data.number}</li>
         </ul>
-        <p><strong>Mensagem:</strong></p>
+        <p><strong>Message:</strong></p>
         <p>${data.content}</p>
       </div>
     </body>
