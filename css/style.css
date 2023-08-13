@@ -89,7 +89,6 @@ section {
   background-size: cover;
   background-position: center;
 }
-
 .home-content {
   max-width: 60rem;
 }
@@ -223,7 +222,7 @@ span {
 }
 
 #black span {
-  color:var(--gold-color);
+  color: var(--gold-color);
   filter: contrast(3);
 }
 
