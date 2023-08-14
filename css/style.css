@@ -109,12 +109,11 @@ section {
 .home-content .text-animate h3 {
   font-size: 3.2rem;
   font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke: 1.7px #fafafa;
+  color: var(--gold-color);
 }
 
 .home-content p {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 2rem 0 4rem;
   color: #fafafa;
   filter: contrast(3);
