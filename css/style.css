@@ -77,16 +77,16 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 6rem;
 }
 
 .home {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url(../photos/2nova.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(../../photos/2nova.jpg) no-repeat;
+  background-size: 190% 100%;
+  background-position: left;
 }
 .home-content {
   max-width: 60rem;
@@ -216,9 +216,15 @@ span {
   color: var(--main-color);
 }
 
+#home h3,
+p {
+  text-shadow: 0 0 5px black;
+}
+
 #black span {
   color: var(--gold-color);
   filter: contrast(3);
+  text-shadow: 0 0 15px black;
 }
 
 h2 > span {
@@ -602,39 +608,88 @@ h2 > span {
   min-height: 100vh;
 }
 
-@media screen and (min-width: 992px){
-  #menu {display: none;}
+#services {
+  display: flex;
+  justify-content: center;
+  min-height: auto;
+}
+
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.slide-item_hidden {
+  display: none;
+}
+
+.control {
+  margin-top: 20px;
+}
+
+.control span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+
+.control span.active {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+
+@media screen and (min-width: 992px) {
+  .home {
+    background-size: cover;
+    background-position: center;
+  }
+
+  #menu {
+    display: none;
+  }
 
   .menu_container {
-      position: static;
-      display: block;
-      width: auto;
-      height: auto;
-      background-color: transparent;
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
   }
 
   .menu_container nav {
-      flex-direction: row;
+    flex-direction: row;
   }
 
   .menu_container nav a {
-      margin: 0 0.8rem;
+    margin: 0 0.8rem;
   }
 
   .menu_container nav a::after {
-      content: "";
-      display: block;
-      height: 3px;
-      width: 0;
-      background-color: white;
-      transition: 0.6s;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: 0.6s;
   }
 
   .menu_container nav a:hover::after {
-      width: 100%;
+    width: 100%;
   }
 
   .footer-text p {
     font-size: 1.6rem;
+  }
+
+  .slide-container {
+    width: 40%;
   }
 }
