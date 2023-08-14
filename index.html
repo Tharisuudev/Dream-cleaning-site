@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" class="">
+  <link type="text/css" id="dark-mode" rel="stylesheet" href="" /><style
+    type="text/css"
+    id="dark-mode-сustom-style"
+  ></style
+  ><style type="text/css" id="dark-mode-theme-changer-style"></style
+  ><head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -15,19 +19,22 @@
     />
   </head>
 
-  <body>
+  <body cz-shortcut-listen="true">
     <!-- header design  -->
     <header class="header">
       <a href="#" class="logo">Dream Cleaning.</a>
 
       <div class="bx bx-menu" id="menu-icon"></div>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact Us</a>
-      </nav>
+      <button id="menu">☰</button>
+      <div class="menu_container">
+        <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </div>
     </header>
 
     <!-- home section design -->
@@ -39,16 +46,16 @@
           <h3>Where Cleanliness Meets Perfection</h3>
         </div>
         <p>
-         Want to get your house cleaned? Get in touch with us! Click right below
+          Want to get your house cleaned? Get in touch with us! Click right
+          below
         </p>
 
         <div class="btn-box">
           <a href="https://wa.me/15613348679" class="btn">Contact Us</a>
         </div>
       </div>
-    
     </section>
-    
+
     <!-- about section design -->
     <section class="about" id="about">
       <h2 class="heading">About <span>Dream Cleaning</span></h2>
@@ -84,34 +91,34 @@
 
     <section id="services">
       <div class="slideshow-container">
-        <div class="mySlides fade">
+        <div class="mySlides fade" style="display: none">
           <div class="numbertext">1 / 6</div>
           <img src="../photos/piscina1.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides fade" style="display: none">
           <div class="numbertext">2 / 6</div>
           <img src="../photos/piscina2.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides fade" style="display: block">
           <div class="numbertext">3 / 6</div>
           <img src="../photos/piscina3.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
-        <div class="mySlides fade">
+        <div class="mySlides fade" style="display: none">
           <div class="numbertext">4 / 6</div>
           <img src="../photos/img4.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
-        <div class="mySlides fade">
+        <div class="mySlides fade" style="display: none">
           <div class="numbertext">5 / 6</div>
           <img src="../photos/img5.jpg" style="width: 100%" />
           <div class="text"></div>
         </div>
-        <div class="mySlides fade">
+        <div class="mySlides fade" style="display: none">
           <div class="numbertext">6 / 6</div>
           <img src="../photos/img6.jpg" style="width: 100%" />
           <div class="text"></div>
@@ -120,16 +127,16 @@
       <br />
 
       <!-- <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div> -->
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div> -->
 
       <!-- The dots/circles -->
       <div style="text-align: center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot active" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
         <span class="dot" onclick="currentSlide(6)"></span>
@@ -147,7 +154,7 @@
             <input
               type="text"
               placeholder="Full Name"
-              required
+              required=""
               name="name"
               class="name"
             />
@@ -157,7 +164,7 @@
             <input
               type="text"
               placeholder="Email Address"
-              required
+              required=""
               name="email"
               class="email"
             />
@@ -170,7 +177,7 @@
             <input
               type="number"
               placeholder="Mobile Number"
-              required
+              required=""
               name="number"
               class="number"
             />
@@ -180,7 +187,7 @@
             <input
               type="text"
               placeholder="Email Subject"
-              required
+              required=""
               name="subject"
               class="subject"
             />
@@ -195,7 +202,7 @@
             cols="30"
             rows="10"
             placeholder="Your Message"
-            required
+            required=""
           ></textarea>
           <span class="focus"></span>
         </div>
@@ -211,19 +218,19 @@
 
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2023 by Thalys Souza | All Rights Reserved.</p>
+        <p>Copyright © 2023 by Thalys Souza | All Rights Reserved.</p>
       </div>
       <div class="footer-iconTop">
         <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
-    </footer> 
+    </footer>
 
     <div id="container-hidden" class="container-js hidden">
       <h2>Sucess!</h2>
       <p>Your email has been sent, we will get in touch soon!</p>
       <button id="btn-hidden" onclick="hiddeBtn()">OK</button>
     </div>
-  
+
+    <script src="../js/script.js"></script>
   </body>
-  <script src="../js/script.js"></script>
 </html>
