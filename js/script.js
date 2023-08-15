@@ -119,7 +119,7 @@ form.addEventListener("submit", async (e) => {
   let content = document.querySelector("#content").value
   const div = document.querySelector(".response")
 
-  await fetch("http://localhost:3000/send", {
+  await fetch("https://contact-pool.onrender.com/send", {
     body: JSON.stringify({
       name,
       email,
