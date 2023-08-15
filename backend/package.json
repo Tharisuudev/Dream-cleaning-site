@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --transpile-only --respawn src/server.ts",
-    "build": "tsc ./src/server.ts"
+    "build": "tsc ./src/server.ts",
+    "start": "node ./src/server.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
