@@ -597,8 +597,7 @@ h2>span {
   right: 0;
   height: 0;
   transform-origin: top right;
-  transform: scaleY(0);
-  visibility: hidden;
+  visibility: visible;
   background-color: var(--gray-color);
   transition: 0s;
 }
@@ -667,7 +666,7 @@ h2>span {
   background-color: rgba(0, 0, 0, 0.822);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .home {
     background-size: cover;
     background-position: center;
