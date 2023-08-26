@@ -595,11 +595,10 @@ h2>span {
   position: absolute;
   top: 6rem;
   right: 0;
+  width: 100%;
   height: 0;
-  transform-origin: top right;
-  visibility: visible;
+  display: none;
   background-color: var(--gray-color);
-  transition: 0s;
 }
 
 .menu_container nav {
@@ -617,15 +616,8 @@ h2>span {
 }
 
 .menu_container.active {
-  position: absolute;
-  transform-origin: top right;
-  transform: scaleY(1);
-  visibility: visible;
-  width: 20rem;
-  min-height: 30rem;
-  border-radius: 25px;
-  margin-right: 5px;
-  transition: 0.5s;
+  display: block;
+  min-height: 100vh;
 }
 
 #services {
