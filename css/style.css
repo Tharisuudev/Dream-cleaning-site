@@ -623,7 +623,17 @@ h2>span {
 #services {
   display: flex;
   justify-content: center;
-  min-height: auto;
+}
+
+#services img {
+  border-radius: 5px;
+}
+
+#services img:hover {
+  transform: scale(1.5);
+  transition: 1s ease-in-out;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .slide-container {
@@ -702,6 +712,23 @@ h2>span {
   }
 
   .slide-container {
-    width: 40%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #services .slide-container {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #services .image-container {
+    width: 100%;
+  }
+
+  #services .image-container img {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
