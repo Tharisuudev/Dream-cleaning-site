@@ -255,10 +255,18 @@ h2 > span {
 }
 
 .insurance {
-  margin-left: 50px;
-  padding-bottom: 25px;
   justify-content: center;
   align-items: center;
+}
+
+.insurance img {
+  width: 100;
+  height: 100px;
+}
+
+#texto1 {
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 
 .about-content {
